@@ -30,7 +30,7 @@ const Login = () => {
                     <button onClick={subData} className="btn btn-primary">LOGIN</button>
                 </div>
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                   <a href="login">New User Click Here</a>
+                   <a href="/Register">New User Click Here</a>
                 </div>
             </div>
         </div>
