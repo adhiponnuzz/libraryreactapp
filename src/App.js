@@ -5,12 +5,14 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Login from './component/Login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Register from './component/Register';
+import Addbook from './component/Addbook';
 
 
 function App() {
   return (
 
     <>
+    <Addbook/>
     <BrowserRouter>
 
     <Routes>
