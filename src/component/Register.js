@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import Addbook from './Addbook'
 
 const Register = () => {
     var [name,setName]=useState("")
@@ -44,7 +46,10 @@ const Register = () => {
                     <input onChange={(e)=>{setCpassword(e.target.value)}} placeholder="Enter Confirm Password" type="password" name="" id="" class="form-control"/>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button onClick={database} class="btn btn-primary">REGISTER</button>
+                    <Link to="/add" exact element={<Addbook/>}><button  onClick={database} class="btn btn-primary">REGISTER</button>
+</Link>
+
+                
                 </div>
                 <div class="col col-12 col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl">
                     <a href="/">Back To Login</a>

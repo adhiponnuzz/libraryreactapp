@@ -6,19 +6,23 @@ import Login from './component/Login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Register from './component/Register';
 import Addbook from './component/Addbook';
+import Navbar from './component/Navbar';
 
 
 function App() {
   return (
 
     <>
-    <Addbook/>
+  
+    
     <BrowserRouter>
 
     <Routes>
 
       <Route path="/" exact element={<Login/>}/>
       <Route path="/Register" exact element={<Register/>}/>
+      <Route path="/add" exact element={<Addbook/>}/>
+     
 
     </Routes>
     
